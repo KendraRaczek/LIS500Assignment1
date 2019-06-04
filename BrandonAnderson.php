@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Brandon Anderson</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+h1,h2,h3,h4,h6 {font-family: "Oswald", sans-serif}
+button,body,h5 {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+
+<body>
+
+   <!-- Navbar -->
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="BrandonAnderson.php">Kendra's Tech Hero</a>
+        <a href="Maras_Hero.php">Mara's Tech Hero</a>
+      </div>
+      
+      <img src="raheem.jpg" style="width: 100%; height:auto;">
+
+      <div class="box" style="text-align: left; padding-left:200px; padding-right:200px;">
+            <img src="brandon.png" style="display:flex; float:left; width:50%; height:50%; margin:20pt">
+            
+              <h1>Brandon Anderson</h1>
+              <h5 style="padding-top:14px; ">Brandon D. Anderson is an award-winning storyteller and human rights activist working to end police violence. He is the founder and CEO of Raheem AI, a messenger bot for reporting police interactions that increase transparency and advance policies that end police violence.</h5>
+        
+              <p style="color:#757575;">
+                    Anderson is a decorated U.S. military veteran, serving two tours in Iraq as a satellite and data engineer. He is a 2019 TED Fellow, and an Echoing Green Fellow, an organization of 800 global change-makers that includes First Lady Michelle Obama and CNN Contributor Van Jones. Brandon's work has been honored by the Smithsonian Institute, the National Black Justice Coalition, and the Northern Virginia Chamber of Commerce, naming him Tech Innovator of the Year in 2018. He earned his BA in Sociology at Georgetown University.
+                    
+                    Brandon is the adopted son of John, a tire and rubber plant manager, and Shirley, a rental car clerk and Sunday school teacher who, before she passed, taught the world how to love black queer boys unapologetically. Brandon founded Raheem AI after losing his life partner to police violence while he was serving in the U.S. Army. "His love was radical, unapologetic, and it changed my life."</p>
+
+                    <h2 style="color:#f44336;">
+                    <?php
+                        $birthday=strtotime("May 23");
+                        $timeLeft=ceil(($birthday-time())/60/60/24);
+                        echo "Only " . $timeLeft ." days until Brandon's birthday!";
+                    ?>
+                    </h2>
+        </div>
+
+        <div class="box" style="text-align:center; background-color:#f1f1f1; padding-left:200px; padding-right:200px;">
+
+                  <h1 style="font-family:Oswald">Raheem.ai</h1>
+                  <h5 style="padding-top:14px;">Raheem is a Facebook Messenger Bot that collects and publishes data that local organizations, police departments, and lawmakers can use to better support their communities.</h5>
+                
+                  <p style="color:#757575;">
+
+                        Raheem is funded by My Brother's Keeper, President Obama's initiative to address opportunity gaps faced by young men of color.
+                  </p>
+                    <p style="color:#757575;">
+                        It’s not just Freddie Grey. Or Michael Brown. Or Eric Garner. 
+                         
+                        Black people are three times more likely to be killed by police than white people. In fact, 441 black and brown people have died as a result of police violence since January 2016. Two-thirds of them were neither armed nor accused of a violent crime. These numbers are more than just statistics—they tell a story. They reveal a broken system that has left too many black Americans feeling traumatized, tarnished, and afraid of the very people who are meant to protect them.
+                         
+                        The advent of smartphones and social media has helped bring the issue of police violence to the spotlight. We believe they can be a part of the solution, too.
+                    </p>
+                        <p style="color:#757575;">
+                        Raheem gives a voice back to the community, collecting data that city governments can use to support the individuals that they're sworn to serve. And the value of that—of better, more insightful data—cannot be overstated. A lack of clear, actionable information plays a major role in enabling police violence across the country. 
+                         
+                        Raheem looks to bridge this gap while shedding light on a better path forward. After any experience with an officer, positive or negative, users simply open Facebook and send Raheem a message. The AI-powered messenger bot prompts users to enter demographic and geographic data, in addition to a brief documentation of their experience. This information is anonymously collected, in real time, and to a shared dashboard that can be accessed by anyone, at any time, for any purpose.
+                         
+                        It's our hope that this data can be leveraged to shape policy, change protocols, and provide a roadmap to a more harmonious relationship between law enforcers and the people. </p>  
+
+
+
+                    <br>
+                    <h1>Sign up for the newsletter and check the box if you liked this page!</h1>
+
+                    <form method="post" action="BrandonAnderson.php"> 
+                    <input type="checkbox" name="Like" value="value1"> 
+                        
+                        Email: <input type="text" name="email">
+                            
+                        <input type="submit" name="submit" value="Submit">  
+                        </div>
+                        
+                        
+
+                    </form>
+
+                   
+                    <div class="box" style="text-align:center; background-color:#f1f1f1; padding-left:200px; padding-right:200px; padding-top:0px">
+                    <h2>
+                    <?php 
+                    if(isset($_POST['submit'])) {
+
+                        echo "Thank you for submitting your email, " . $_POST["email"];
+
+                        if (isset($_POST["Like"])) {
+                            echo "<br>and thanks for liking my page!";
+                        } 
+                    }
+                    ?>
+                    </h2>
+                    </div>
+
+        </div>
+        <div class="graybox" style="color:#686868; display:table; clear:both;">
+
+            <img src="raheemlogo.png" style="display: block; margin-left: auto; margin-right: auto; width:20%; height:20%; ">
+            <br>
+            <h5 style="color:#ffffff; text-align:center;"><?php echo "The current date is " . date("l ") . date("m-d-Y") . "<br>";?></h5>
+    
+        </div>
+</body>
+</html>

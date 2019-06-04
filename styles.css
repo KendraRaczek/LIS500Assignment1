@@ -1,0 +1,94 @@
+.topnav {
+    background-color:#f44336;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: "Montserrat"
+  }
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color:black;
+    color: white;
+  }
+
+.head {
+    content:"";
+    display:table;
+    clear:both;
+    color:#fff;
+    background-color:#f44336;
+    text-align:center;
+    display:block;
+    width:100%;
+    padding:128px 16px
+}
+.button {
+    white-space:normal;
+    color:#fff;
+    background-color:#000;
+    padding:12px 24px;
+    font-size:18px;
+    margin-top:16px;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+  }
+.box {
+    padding:0 8px;
+    padding-top:64px;
+    padding-bottom:64px;
+    padding-left:300px;
+    padding-right:300px;
+    content:"";
+    display:table;
+    clear:both;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}
+.row:after {
+  content:"";
+  display:table;
+  clear:both;
+  color:#000;
+  background-color:#fff;
+  text-align:center;
+  opacity:0.60;
+  padding-top:64px;
+  padding-bottom:64px;
+}
+  .foot {
+    display:table;
+    clear:both;
+    padding-top:64px;
+    text-align:center;
+    background-color: #2d2d2d;
+    width: 100%
+  }
+  .graybox {
+    padding-left:160pt;
+    padding-right:160pt;
+    padding-top:25pt;
+    padding-bottom:25pt;
+    background-color:#686868;
+    width:100%;
+    display:table;
+    clear:both;
+  }
